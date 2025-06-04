@@ -1,0 +1,24 @@
+cc_library(
+    name = "lib",
+    hdrs = [
+        "lib.hh",
+    ],
+)
+
+cc_test(
+    name = "lib_test",
+    srcs = ["lib.test.cc"],
+    deps = [
+        ":lib",
+        "@googletest//:gtest",
+        "@googletest//:gtest_main",
+    ],
+)
+
+cc_binary(
+    name = "main",
+    srcs = ["main.cc"],
+    deps = [
+        ":lib",
+    ],
+)
