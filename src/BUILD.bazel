@@ -1,8 +1,11 @@
 cc_library(
     name = "lib",
     hdrs = [
-        "lib.hh",
+        "lib.hh"
     ],
+    deps = [
+        "@spdlog//:spdlog"
+    ]
 )
 
 cc_test(
@@ -19,6 +22,8 @@ cc_binary(
     name = "main",
     srcs = ["main.cc"],
     deps = [
-        ":lib",
-    ],
+        ":lib"
+    ]
 )
+
+

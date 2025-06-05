@@ -13,8 +13,9 @@
 
       src = ./..;
       bazel = pkgs.bazel_7;
-      fetchAttrs.hash = "sha256-4qyko1yB4n8Mu/1bP0L1so+ScWAExG41kvDOpnzNo00=";
 
+      fetchConfigured = false;
+      fetchAttrs.hash = "sha256-ePiXCNG6GFPaJeN3RMpOCaV8JqDS3u77H9qoaU6fu7M=";
 
       buildInputs = with pkgs; [
         git
