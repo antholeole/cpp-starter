@@ -6,11 +6,13 @@
 
     flake-parts.url = "github:hercules-ci/flake-parts";
     treefmt-nix.url = "github:numtide/treefmt-nix";
+    flake-root.url = "github:srid/flake-root";
   };
 
   outputs = {
     flake-parts,
     treefmt-nix,
+    flake-root,
     ...
   } @ inputs: let
     pname = "cpp-starter";
@@ -18,6 +20,7 @@
     flake-parts.lib.mkFlake {inherit inputs;} {
       imports = [
         treefmt-nix.flakeModule
+        flake-root.flakeModule
 
         ./parts/devshell.nix
         ./parts/package.nix
