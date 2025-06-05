@@ -4,5 +4,4 @@
 int main() {
   std::cout << "hello world!\n";
   std::cout << hash(5) << "\n";
-
 }

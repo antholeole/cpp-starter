@@ -2,4 +2,4 @@
 
 #include "lib.hh"
 
-TEST(LibTest, Add) { EXPECT_EQ(11 + 12, 22); }
+TEST(LibTest, Add) { EXPECT_EQ(11 + 12, 23); }
