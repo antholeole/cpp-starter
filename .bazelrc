@@ -1,1 +1,5 @@
-common:all --cxxopt='-std=c++2c'
+common --enable_bzlmod
+
+common --cxxopt=-std=c++2b
+common --cxxopt=-Werror
+common --cxxopt=-Wall

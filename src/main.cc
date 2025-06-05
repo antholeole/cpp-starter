@@ -3,5 +3,6 @@
 
 int main() {
   std::cout << "hello world!\n";
-  std::cout << "added: " << add(1, 2) << std::endl;
+  std::cout << hash(5) << "\n";
+
 }
