@@ -22,6 +22,7 @@
         ./parts/devshell.nix
         ./parts/package.nix
         ./parts/fmt.nix
+        ./parts/check.nix
       ];
 
       systems = [

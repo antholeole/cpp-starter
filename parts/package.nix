@@ -11,16 +11,16 @@
       inherit pname;
       version = "1.0.0";
 
-      src = ./.;
-      bazel = pkgs.bazel; # 6.5 
-      fetchAttrs.hash = "sha256-NpLWuVl8/cjaziS2gzyY8a87av+PlfY+IInYSDroe74=";
+      src = ./..;
+      bazel = pkgs.bazel_7;
+      fetchAttrs.hash = "sha256-4qyko1yB4n8Mu/1bP0L1so+ScWAExG41kvDOpnzNo00=";
+
 
       buildInputs = with pkgs; [
         git
       ];
 
       bazelTargets = ["//src:main"];
-      bazelTestTargets = ["//..."];
       bazelFlags = [
         "--registry"
         "file://${registry}"
